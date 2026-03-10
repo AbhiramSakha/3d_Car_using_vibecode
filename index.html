@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mini Racer</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div id="hud">
+    <span>SCORE:</span>
+    <span id="score-value">0</span>
+</div>
+
+<canvas id="gameCanvas"></canvas>
+
+<div id="start-screen" class="overlay">
+    <h1>🏎 MINI RACER</h1>
+    <p>Use ← → to move</p>
+    <button id="start-btn">START RACE</button>
+</div>
+
+<div id="game-over" class="overlay hidden">
+    <h1>💥 CRASHED!</h1>
+    <p>Your Score: <span id="final-score">0</span></p>
+    <button id="restart-btn">PLAY AGAIN</button>
+</div>
+
+<script src="js/game.js"></script>
+</body>
+</html>

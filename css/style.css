@@ -1,0 +1,145 @@
+/* =============================
+   MINI RACER – CLEAN VERSION
+   ============================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0a0a0f;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+/* ===== Canvas ===== */
+#gameCanvas {
+    display: block;
+    margin: 0 auto;
+    background: #111118;
+    border-left: 4px solid #ff3c78;
+    border-right: 4px solid #ff3c78;
+}
+
+/* ===== HUD ===== */
+#hud {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 25px;
+    background: rgba(0,0,0,0.8);
+    border-radius: 0 0 12px 12px;
+    display: flex;
+    gap: 10px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+#hud.visible {
+    opacity: 1;
+}
+
+#score-value {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* ===== Overlay ===== */
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.overlay.hidden {
+    display: none;   /* 🔥 completely removed */
+}
+
+.overlay h1 {
+    margin-bottom: 20px;
+}
+
+.overlay button {
+    padding: 12px 30px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    background: linear-gradient(135deg, #ff3c78, #ff6f3c);
+    color: white;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0a0a0f;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+#gameCanvas {
+    display: block;
+    margin: 0 auto;
+    background: #1a1a2e;
+    border-left: 4px solid #ff3c78;
+    border-right: 4px solid #ff3c78;
+}
+
+/* HUD */
+#hud {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0,0,0,0.8);
+    padding: 10px 25px;
+    border-radius: 0 0 12px 12px;
+    display: flex;
+    gap: 10px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+#hud.visible {
+    opacity: 1;
+}
+
+/* Overlay */
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.overlay.hidden {
+    display: none;
+}
+
+.overlay button {
+    margin-top: 20px;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #ff3c78, #ff6f3c);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
